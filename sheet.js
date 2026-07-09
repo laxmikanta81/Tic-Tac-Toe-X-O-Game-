@@ -20,9 +20,11 @@ boxes.forEach((box)=>{
     box.addEventListener("click",()=>{
         console.log("box was clicked");
         if(turn0){
+            box.style.color="blue";
             box.innerText="O";
             turn0=false;
         }else{
+            box.style.color="red";
             box.innerText="x";
             turn0=true;
         }if(count===8){
